@@ -11,12 +11,12 @@ clear
 % local=['D:\document\Research\水下光通信\mfile\communication\ACP21-07-04\pam4\'];
 % seq=csvread([local '100M_15m_clean.csv'],2,0,'A3..B62502');
 
-local='C:\Users\admin\Desktop\PAM_ACP\osc_data0705\pam4\';
+local='D:\document\Research\水下光通信\mfile\communication\ACP21-07-04\PAM_ACP\pam4\';
 % seq=csvread([local '20m_50M_clean.csv'],2,0,'A3..B62502');
 
 fre=100;
 % seq=csvread([local '25m_' num2str(fre) 'M_clean1.csv'],2,0,'A3..B50002');
-seq=csvread([local 'HighQ_20m_' num2str(fre) 'M.csv'],2,0,'A3..B50002');
+seq=csvread([local '20m_' num2str(fre) 'M.csv'],2,0,'A3..B50002');
 
 Array=seq(:,2);
 Tinterval=mean(diff(seq(:,1)));
